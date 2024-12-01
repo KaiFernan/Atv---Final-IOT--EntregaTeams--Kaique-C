@@ -1,0 +1,248 @@
+/* Arquivo: inicial.css */
+
+/* Aplicação da fonte escolhida */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* Cabeçalho */
+header, .Escola, .Final{
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+    transition: transform 1s ease-in-out;
+}
+
+/* Títulos */
+.Nome {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 0.5em;/* Define o espaço entre o elemento e conteudo abaixo, ou seja, margem inferior*/
+    margin-top: 1em;/* Define o espaço entre o elemento e conteudo acima, ou seja, margem superior*/
+    transition: transform 1s ease-in-out;
+}
+
+h2, h3 {
+    color: #fff;
+    font-weight: 600;/* os valores logo após o dois pontos representa o peso, que seria a espessura da linha, 100 é o mais leve(muito fino), 400 é o normal, 700 é mais pesado(negrito) e podem chegar até 900.*/
+    margin: 1em 0;
+    transition: transform 1s ease-in-out;
+}
+
+/* Texto de apresentação */
+.Curso {
+    color: #eee;
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+/* Botão interativo */
+button {
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    padding: 12px 25px;/*espaço interno no botão, o primeiro serve para a escala de cima e baixo e o segundo serve para a escala direita e esquerda.*/
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    transition: transform 1s ease-in-out;
+}
+/* O hover se trata de uma outra estilização no momento em que se passar o mouse */
+button:hover {
+    background-color: #2575fc;
+    transform: scale(1.3);
+    transition: 0.5s ease-in-out;
+}
+
+/* Container para centralizar o botão */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Links e texto dentro das seções */
+.Site, .seguinte, .anterior, .atual {
+    font-size: 1.1em;
+    color: #fff;
+    text-align: center;
+    margin: 15px 0;
+}
+
+a {
+    color: #ff3e3e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    transition: transform 1s ease-in-out;
+}
+
+a:hover {
+    color: #ee6d04;
+    transform: scale(1.5);
+    transition: 1s ease-in-out;
+}
+
+/* Seções principais */
+.Início, .work, .áreas {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px; /*Serve para alterar  o espaçamento interno de um elemento*/
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 25px 0;
+    transition: transform 1s ease-in-out;
+}
+
+/* Rodapé estilizado */
+footer {
+    font-size: 0.9em; /*Tem basicamente 90% do elemento maior na hierarquia*/
+    color: #ddd;
+    margin-top: 20px; /* É a margem estabelecida para a barte superior a este contéudo*/
+    transition: transform 1s ease-in-out;
+}
+
+/* Aumenta a seção ao passar o mouse */
+.Início:hover, .work:hover, .áreas:hover, .Final:hover, .Escola:hover {
+    transform: scale(1.1); /* Aumenta em 10% */
+    transition: 0.8s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Aumenta a sombra */
+}
+.Início:hover, .work:hover, .áreas:hover {
+    transform: scale(1.02) rotate(1.1deg); /* Aumenta e gira levemente */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5); /* Adiciona profundidade */
+    transition: transform 0.7s ease-in-out, box-shadow 0.7s ease-in-out; /* Serve para aplicar uma transição na ação que você pós anteriormente */
+}
+
+button {
+    background: linear-gradient(90deg, #8f00e2, #2575fc);
+    background-size: 200%;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-position 0.3s ease;
+    transition: transform 1s ease-in-out;
+}
+
+button:hover {
+    background-position: right;
+}
+
+body {
+    background: linear-gradient(45deg, #cb1111, #2575fc);
+    background-size: 400% 400%;
+    animation: movimento-fundo 10s ease infinite;
+}
+
+@keyframes movimento-fundo {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* Agora os códigos estaram relacionados a outras páginas*/
+
+/* Estilo das caixas de disciplinas */
+.caixa-gradiente {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;/* Serve ára o arredondamento das bordas*/
+    color: white;
+    text-align: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transition: transform 1s ease-in-out;
+}
+/* Apenas o elemento que está sendo "hovered" é afetado */
+.caixa-gradiente:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo do carrossel */
+.carousel {
+    display: flex;
+    align-items: center;/* Alinha verticalmente */
+    justify-content: center;/* Centraliza horizontalmente */
+    position: relative;
+    margin: 0 auto; /* Garante centralização */
+    width: 100%;  /* Faz o carrossel ocupar 100% da largura disponível */
+    max-width: 600px; /* Limita a largura máxima para um carrossel de tamanho fixo */
+    overflow: hidden; /* Oculta as imagens fora do carrossel */
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-imagens {
+    display: flex;
+    align-items: center;
+    transition: transform 2s ease-in-out; /* Transição suave para as imagens */
+}
+
+.carousel-imagens img {
+    width: 100%;  /* Faz as imagens ocuparem toda a largura do carrossel */
+    height: auto; /* Mantém a proporção original da imagem */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorção */
+    align-items: center;
+}
+
+button.prev, button.next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+img{
+    align-items: center;
+    height: 200px;
+    width: auto;
+}
+footer{
+    margin-top: 5%;
+}
+.Início{
+    margin-top: 3%;
+    margin-bottom: 8%;
+}
+

@@ -1,0 +1,303 @@
+body{
+    margin: 0%;
+}
+
+.Cabeçalho{
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0%;
+    font-size: 5em;
+    color: black;
+    font-weight: 900;
+    border: none; 
+    background-color: gray;
+}
+
+.Escola{
+    transition: transform 1s ease-in-out;
+}
+.Escola:hover{
+    transform:scale(1.1) rotate(1.1deg);
+    color: white;
+    transition: 2s ease;
+}
+
+.espaçamento{
+    color: black;
+    padding: 5px 0;
+    width: 100%;
+    background-color: black;
+}
+
+.espaçamento2{
+    padding: 20px 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.caixa{
+    padding: 150px;
+    align-items: left;
+    font-family: 'Poppins', sans-serif;
+    color: black;;
+    background-size: 400% 400%;
+    animation: movimento-fundo 10s ease infinite;
+    transition: transform 1s ease-in-out;
+}
+
+.Imagem{
+    object-fit: cover;
+    align-items: right;
+    width: 35%;
+    height: 35%;
+    box-shadow: 0 4px 8px black;
+    position: relative;
+    left: 55em;
+    transition: transform 1s ease-in-out;
+}
+
+.Imagem:hover{
+    transform: scale(1.1);
+    transition: 1.5s ease-in-out;
+    box-shadow: 0 16px 32px black;
+}
+
+.Areas{
+    padding: 92px;
+    width: 230px;
+    align-items: left;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin-left: 1px;
+}
+
+.sobreposição{
+    padding: 100px;
+    box-shadow: 0 16px 32px rgb(0, 0, 0);
+    color: black;
+    background-color: white;
+    opacity: 75%;
+    transition: transform 1s ease-in-out;
+}
+
+.sobreposição:hover{
+    padding: 100px;
+    align-items: center;
+    transform: scale(1.05) rotate(1.1deg);
+    background-color: rgb(112, 111, 111);
+    transition: 1.7s ease;
+    color: white(255, 255, 255);
+    box-shadow: 0 16px 32px black;
+    opacity: 100%;
+}
+
+.sobreposiçãoar{
+    padding: 100px;
+    box-shadow: 0 16px 32px rgb(145, 144, 144); 
+    opacity: 65%;
+    background-color: black;
+    color: white;
+    transition: transform 1s ease-in-out;
+}
+
+.sobreposiçãoar:hover{
+    padding: 100px;
+    background-color: white; 
+    align-items: center;
+    transform: scale(1.6);
+    opacity: 100%;
+    transition: 1.2s ease-in-out;
+    box-shadow: 0 16px 32px black;
+    color: black;
+}
+
+.sobreposiçãoariot{
+    padding: 150px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    opacity: 65%;
+    transition: transform 10s ease-in-out;
+}
+.sobreposiçãoariot:hover{
+    color: black;
+    background-color: white;
+    opacity: 100%;
+    transition: 1.7s ease-in-out;
+}
+
+.Linkar{
+    color: white;  
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.b1{
+    background: url('CHS.jpg') no-repeat center center; /* Imagem de fundo */
+    background-size: cover;
+    position: relative;
+    margin-left: 5.7em;
+}
+.b2{
+    background: url('CNT.jpg') no-repeat center center; /* Imagem de fundo */
+    background-size: cover;
+    position: relative;
+    margin-left: 2em;
+}
+.b3{
+    background: url('Mat.jpg') no-repeat center center; /* Imagem de fundo */
+    background-size: cover;
+    position: relative;
+    margin-left: 2em;
+}
+.b4{
+    background: url('LIN.jpg') no-repeat center center; /* Imagem de fundo */
+    background-size: cover;
+    position: relative;
+    margin-left: 2em;
+}
+.b5{
+    background: url('IOT2.jpg') no-repeat center center; /* Imagem de fundo */
+    background-size: cover;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.fundo{
+    background: rgb(255, 255, 255);
+}
+
+.Areasiot{
+    align-items: left;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin-left: 1px;
+    transition: transform all 1s ease;
+}
+
+
+/* Estilos para o fundo escurecido do popup */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 0.8s ease;
+}
+
+/* Caixa de conteúdo do popup */
+.popup-content {
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    font-weight: 900;
+    font-size: 2em;
+    transition: transform 1s ease-in-out;
+}
+
+/* Exibir o popup */
+.popup-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-content:hover{
+    transform: scale(1.1);
+    transition: 2s ease;
+}
+.simbolo{
+    position: relative;
+    right: 9em;
+    height: 6%;
+    width: 6%;
+    object-fit: cover;
+    align-items: right;
+    transition: transform 1s ease-in-out;
+}
+.simbolo:hover{
+    transform: scale(1.4) rotate(-10deg);
+    transition: 2s ease;
+}
+.simbolo2{
+    position: relative;
+    left: 9em;
+    height: 8%;
+    width: 8%;
+    object-fit: cover;
+    align-items: right;
+    transition: transform 1s ease-in-out;
+}
+.simbolo2:hover{
+    transform: scale(1.4) rotate(10deg);
+    transition: 2s ease;
+}
+.Tema{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 800;
+}
+a{
+    text-decoration: none; /* Remove o sublinhado */
+    color:inherit; /* Usa a cor do texto do elemento pai */
+    
+}
+.a1{
+    text-decoration: none; /* Remove o sublinhado */
+    color:blue; 
+}
+.h1intro{
+    font-weight: 700;
+    font-family:'Poppins', sans-serif;
+    font-size: 3em;
+}
+.txtintro{
+    font-weight: 700;
+    font-family:'Poppins', sans-serif;
+    font-size: 2em;  
+}
+.Areastxt{
+    padding: 40px 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+.Tematxt{
+    font-family: 'Poppins', sans-serif;
+    font-size: 5em;
+    margin-top: 20px;
+    font-weight: 600;
+    transition: transform 1s ease-in-out;
+}
+.Tematxt:hover{
+    transform:scale(1.1) rotate(1.1deg);
+    color: white;
+    transition: 2s ease;
+}
+.btn{
+    padding: 15px;
+    position: relative;
+    top: 4em;
+    background-color: blue;
+    border-radius: 20px;
+    color: white;
+    transition: transform 1s ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.3);
+    transition: 1.5s ease;
+    box-shadow: 0 8px 16px black;
+}
